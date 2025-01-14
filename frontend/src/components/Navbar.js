@@ -15,24 +15,19 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-info" role="navigation" aria-label="main navigation">
         <div className="container">
 
       <div className="navbar-brand">
       <a className="navbar-item" href="https://id.wikipedia.org/wiki/Universitas_Muhammadiyah_Makassar" aria-label="Kunjungi Bulma">
-        <img src="https://arsitektur.unismuh.ac.id/wp-content/uploads/2022/08/cropped-logo-removebg-preview.png" width="50" height="50" alt='logo' />
+        <img src="mortarboard.png" width="30" height="30" alt='logo' />
         </a>
-    
-        <a href='/' role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        
       </div>
     
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
-          <a href='/' className="navbar-item">
+          <a href='/' className="navbar-item has-text-white">
             Home
           </a>
         </div>
@@ -40,7 +35,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <button onClick={Logout} className="button is-light">
+              <button onClick={Logout} className="button is-danger has-text-white">
                 Log Out
               </button>
             </div>

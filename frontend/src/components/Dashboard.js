@@ -24,6 +24,7 @@ const Dashboard = () => {
       setExpire(decoded.exp);
     } catch (error){
         if(error.response){
+             console.log("User is not authenticated. Redirecting...");
             navigate('/');
         }
     }
@@ -58,8 +59,8 @@ const Dashboard = () => {
     <div className='container mt-5'>
         <h1 >Selamat Datang<p className='title'>{name} !
           </p></h1>
-        <button onClick={getUsers} className='button is-info'>Get Users</button>
-        <table className='table is-striped is-fullwidth'>
+        <button onClick={getUsers} className='button is-info mt-5'>Get Users</button>
+        <table className='table is-striped is-fullwidth mt-2'>
           <thead>
             <tr>
               <th>No</th>
